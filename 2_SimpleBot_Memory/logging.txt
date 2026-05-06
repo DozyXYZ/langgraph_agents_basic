@@ -1,0 +1,17 @@
+Your conversation log:
+You: hi
+AI: Hello! How can I assist you today?
+
+You: Do you know Elden Ring?
+AI: Yes, I'm familiar with Elden Ring. It's a critically acclaimed action role-playing game developed by FromSoftware and published by Bandai Namco Entertainment. The game is set in an open-world fantasy universe and combines elements of dark fantasy and Norse mythology. Players explore the land of Tristram, battling various enemies and completing quests while trying to uncover the ancient secrets of Elden Ring. Do you have any specific questions about the game or are you looking for information on how I might assist you with it?
+
+You: tell me a joke in English
+AI: Sure, here's a joke for you:
+
+Why was the math book sad?
+
+Because it had too many problems.
+
+I hope you found that joke amusing! Do you have any other requests or questions?
+
+End of Conversation
