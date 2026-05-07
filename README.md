@@ -1,5 +1,3 @@
-# langgraph_basic_agent
-
 # LangGraph Basic Agent Collection
 
 This repository demonstrates several basic and intermediate agent patterns using [LangGraph](https://langchain-ai.github.io/langgraph/) and [Ollama](https://ollama.com/) for local LLMs. Each folder contains a progressively more advanced example, from a simple stateless agent to a document-editing agent with tool use.
