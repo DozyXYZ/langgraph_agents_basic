@@ -1,6 +1,19 @@
 # langgraph_basic_agent
 
-A simple Python project demonstrating basic agent functionality using LangGraph. This guide will help you set up the environment, install dependencies, configure Ollama, pull a model, and set up environment variables.
+# LangGraph Basic Agent Collection
+
+This repository demonstrates several basic and intermediate agent patterns using [LangGraph](https://langchain-ai.github.io/langgraph/) and [Ollama](https://ollama.com/) for local LLMs. Each folder contains a progressively more advanced example, from a simple stateless agent to a document-editing agent with tool use.
+
+## Project Overview
+
+**Folders:**
+
+- `1_SimpleBot/` — Minimal stateless agent: single-turn LLM call, no memory.
+- `2_SimpleBot_Memory/` — Agent with memory: multi-turn conversation, logs chat to file.
+- `3_ReAct_Agent/` — ReAct-style agent: uses tools (add, subtract, multiply), demonstrates tool-calling and reasoning.
+- `4_Drafter/` — Document editing agent: uses tools to update and save documents, demonstrates tool use and stateful document editing.
+
+See below for details and usage for each example.
 
 ## Prerequisites
 
@@ -54,26 +67,60 @@ OLLAMA_MODEL=llama3:8b
 ## Project Structure
 
 ```
-1_SimpleBot/
-    agent_bot.py
-2_SimpleBot_Memory/
-    agent_bot.py
-    logging.txt
+langgraph_basic_agent/
+│
+├── 1_SimpleBot/
+│   └── agent_bot.py
+│
+├── 2_SimpleBot_Memory/
+│   ├── agent_bot.py
+│   └── logging.txt
+│
+├── 3_ReAct_Agent/
+│   └── react_agent.py
+│
+├── 4_Drafter/
+│   ├── drafter.py
+│   └── document_update.txt
+│
+└── README.md
 ```
 
 ## Usage
 
-Run the desired agent bot script:
+### 1. SimpleBot
+
+Single-turn, stateless agent. Each input is processed independently.
 
 ```
 python 1_SimpleBot/agent_bot.py
-# or
+```
+
+### 2. SimpleBot with Memory
+
+Multi-turn conversational agent. Maintains conversation history and logs the chat to `logging.txt` after exit.
+
+```
 python 2_SimpleBot_Memory/agent_bot.py
+```
+
+### 3. ReAct Agent (Tool-using)
+
+Agent that can use tools (add, subtract, multiply) and reason step-by-step. Demonstrates tool-calling and multi-step reasoning.
+
+```
+python 3_ReAct_Agent/react_agent.py
+```
+
+### 4. Drafter (Document Editing Agent)
+
+Agent that helps update and save documents using tools. Demonstrates tool use, stateful editing, and saving to file.
+
+```
+python 4_Drafter/drafter.py
 ```
 
 ## References
 
 - [Ollama Documentation](https://ollama.com/docs)
 - [LangGraph Documentation](https://langchain-ai.github.io/langgraph/)
-
----
