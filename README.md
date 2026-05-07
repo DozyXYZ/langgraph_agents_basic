@@ -23,7 +23,7 @@ See below for details and usage for each example.
 ### 1. Clone the Repository
 
 ```
-git clone <repo-url>
+git clone https://github.com/DozyXYZ/langgraph_agents_basic.git
 cd langgraph_basic_agent
 ```
 
@@ -77,11 +77,28 @@ langgraph_basic_agent/
 ├── 3_ReAct_Agent/
 │   └── react_agent.py
 │
-├── 4_Drafter/
++├── 4_Drafter/
 │   ├── drafter.py
 │   └── document_update.txt
 │
+├── 5_RAG_agent/
+│   ├── rag_agent.py
+│   ├── Stock_Market_Performance_2024.pdf
+│   ├── chroma.sqlite3
+│   ├── rag_agent.PNG
+│   └── README.md
+│
 └── README.md
+
+### 5. RAG Agent (Retrieval-Augmented Generation)
+
+Agent that answers questions about a PDF document using retrieval-augmented generation (RAG). Loads a PDF, splits it into chunks, stores embeddings in ChromaDB, and uses a retriever tool to answer questions with citations from the document.
+
+```
+python 5_RAG_agent/rag_agent.py
+```
+
+See `5_RAG_agent/README.md` for details, setup, and example questions.
 ```
 
 ## Usage
